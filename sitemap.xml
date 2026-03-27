@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://jarvisandseckin.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://jarvisandseckin.vercel.app/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jarvisandseckin.vercel.app/blog/best-free-expense-tracker-apps-2026/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jarvisandseckin.vercel.app/blog/roommate-bill-splitting-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jarvisandseckin.vercel.app/blog/tirzepatide-vs-semaglutide-comparison/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://jarvisandseckin.vercel.app/blog/how-to-split-bills-fairly/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://jarvisandseckin.vercel.app/blog/glp1-medication-tracker-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://jarvisandseckin.vercel.app/blog/failed-payments-saas-revenue/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
