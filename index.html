@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JarvisandSeckin Inc. — AI-powered products for everyday life</title>
+    <meta name="description" content="We build AI-powered apps that solve real problems. EasySplit, EasyBudget, GLP Together, Fun Color Sort, and PayRecover.">
+    <meta property="og:title" content="JarvisandSeckin Inc.">
+    <meta property="og:description" content="AI-powered products for everyday life. Apps on the App Store and SaaS tools for businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jarvisandseckin.vercel.app">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JarvisandSeckin Inc.">
+    <meta name="twitter:description" content="AI-powered products for everyday life.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+
+        /* Nav */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); z-index: 100; border-bottom: 1px solid #f0f0f0; }
+        .nav-inner { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em; }
+        .nav-links a { margin-left: 2rem; font-size: 0.9rem; font-weight: 500; color: #555; transition: color 0.2s; }
+        .nav-links a:hover { color: #1a1a2e; }
+
+        /* Hero */
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem 4rem; background: linear-gradient(170deg, #f8f9ff 0%, #fff 50%, #f0f4ff 100%); }
+        .hero-content { max-width: 700px; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 1.25rem; }
+        .hero h1 span { background: linear-gradient(135deg, #4f46e5, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: #64748b; max-width: 500px; margin: 0 auto 2.5rem; }
+        .hero-cta { display: inline-block; padding: 0.85rem 2.25rem; background: #1a1a2e; color: #fff; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(26,26,46,0.18); }
+
+        /* Section */
+        section { padding: 5rem 2rem; }
+        .section-title { text-align: center; font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .section-sub { text-align: center; color: #64748b; font-size: 1.05rem; margin-bottom: 3rem; max-width: 550px; margin-left: auto; margin-right: auto; }
+
+        /* Products */
+        .products { background: #fafbff; }
+        .products-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .product-card { background: #fff; border: 1px solid #eef0f6; border-radius: 16px; padding: 2rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(79,70,229,0.08); }
+        .product-emoji { font-size: 2.5rem; margin-bottom: 1rem; }
+        .product-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem; }
+        .product-card p { color: #64748b; font-size: 0.95rem; margin-bottom: 1.25rem; }
+        .product-link { display: inline-block; padding: 0.5rem 1.25rem; border: 1.5px solid #4f46e5; color: #4f46e5; border-radius: 50px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+        .product-link:hover { background: #4f46e5; color: #fff; }
+        .badge-soon { display: inline-block; padding: 0.35rem 1rem; background: #f1f5f9; color: #94a3b8; border-radius: 50px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.03em; }
+
+        /* About */
+        .about { max-width: 750px; margin: 0 auto; text-align: center; }
+        .about-text { font-size: 1.15rem; color: #475569; line-height: 1.8; }
+
+        /* Footer */
+        footer { background: #1a1a2e; color: #94a3b8; text-align: center; padding: 3rem 2rem; }
+        footer .footer-brand { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; }
+        footer p { font-size: 0.85rem; line-height: 1.8; }
+        footer a { color: #a5b4fc; }
+        footer a:hover { color: #fff; }
+
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .products-grid { grid-template-columns: 1fr; }
+            section { padding: 3.5rem 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <div class="nav-logo">⚡ JarvisandSeckin</div>
+        <div class="nav-links">
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1><span>JarvisandSeckin</span> Inc.</h1>
+        <p>AI-powered products for everyday life</p>
+        <a href="#products" class="hero-cta">Explore Our Products ↓</a>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h2 class="section-title">Our Products</h2>
+    <p class="section-sub">Tools and apps built by AI agents and humans, working together 24/7.</p>
+    <div class="products-grid">
+        <div class="product-card">
+            <div class="product-emoji">💰</div>
+            <h3>EasySplit</h3>
+            <p>AI-powered bill splitting. Snap a receipt, split instantly with friends. No math, no drama.</p>
+            <a href="https://apps.apple.com/app/easysplit-ai-expense-sharing/id6760238148" target="_blank" class="product-link">App Store →</a>
+        </div>
+        <div class="product-card">
+            <div class="product-emoji">🎙️</div>
+            <h3>EasyBudget</h3>
+            <p>Track expenses with your voice. Just say what you spent — AI handles the rest.</p>
+            <span class="badge-soon">COMING SOON</span>
+        </div>
+        <div class="product-card">
+            <div class="product-emoji">💊</div>
+            <h3>GLP Together</h3>
+            <p>Your GLP-1 companion app. Track doses, share progress, and stay motivated on your journey.</p>
+            <span class="badge-soon">COMING SOON</span>
+        </div>
+        <div class="product-card">
+            <div class="product-emoji">🎨</div>
+            <h3>Fun Color Sort</h3>
+            <p>A relaxing color-sorting puzzle game. Simple to learn, satisfying to master.</p>
+            <a href="https://apps.apple.com/app/fun-color-sort/id6759808471" target="_blank" class="product-link">App Store →</a>
+        </div>
+        <div class="product-card">
+            <div class="product-emoji">🔄</div>
+            <h3>PayRecover</h3>
+            <p>Dunning recovery for SaaS. Automatically recover failed payments and reduce churn.</p>
+            <a href="https://payrecover-pi.vercel.app" target="_blank" class="product-link">Visit Site →</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-sub" style="margin-bottom: 1.5rem;">Who we are and how we work</p>
+        <p class="about-text">We build AI-powered tools that solve real problems. Our team of AI agents and humans works 24/7 to create, ship, and improve products.</p>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="footer-brand">⚡ JarvisandSeckin Inc.</div>
+    <p>© 2026 JarvisandSeckin Inc. | Istanbul, Turkey</p>
+    <p>Contact: <a href="mailto:seckincaglinai@gmail.com">seckincaglinai@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
