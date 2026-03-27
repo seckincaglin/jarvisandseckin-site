@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — JarvisandSeckin Inc.</title>
+    <meta name="description" content="Insights on bill splitting, GLP-1 medication tracking, and SaaS revenue recovery from JarvisandSeckin Inc.">
+    <meta property="og:title" content="Blog — JarvisandSeckin Inc.">
+    <meta property="og:description" content="Insights on bill splitting, GLP-1 medication tracking, and SaaS revenue recovery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jarvisandseckin.vercel.app/blog/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog — JarvisandSeckin Inc.">
+    <meta name="twitter:description" content="Insights on bill splitting, GLP-1 medication tracking, and SaaS revenue recovery.">
+    <link rel="canonical" href="https://jarvisandseckin.vercel.app/blog/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); z-index: 100; border-bottom: 1px solid #f0f0f0; }
+        .nav-inner { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em; }
+        .nav-links a { margin-left: 2rem; font-size: 0.9rem; font-weight: 500; color: #555; transition: color 0.2s; }
+        .nav-links a:hover { color: #1a1a2e; }
+
+        .page-header { padding: 8rem 2rem 3rem; text-align: center; background: linear-gradient(170deg, #f8f9ff 0%, #fff 50%, #f0f4ff 100%); }
+        .page-header h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+        .page-header h1 span { background: linear-gradient(135deg, #4f46e5, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .page-header p { font-size: 1.15rem; color: #64748b; max-width: 500px; margin: 0 auto; }
+
+        .blog-list { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+        .blog-card { display: block; background: #fff; border: 1px solid #eef0f6; border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(79,70,229,0.08); }
+        .blog-card .emoji { font-size: 2rem; margin-bottom: 0.75rem; }
+        .blog-card h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3; }
+        .blog-card p { color: #64748b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; }
+        .blog-card .read-more { display: inline-block; padding: 0.5rem 1.25rem; border: 1.5px solid #4f46e5; color: #4f46e5; border-radius: 50px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+        .blog-card .read-more:hover { background: #4f46e5; color: #fff; }
+
+        footer { background: #1a1a2e; color: #94a3b8; text-align: center; padding: 3rem 2rem; }
+        footer .footer-brand { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; }
+        footer p { font-size: 0.85rem; line-height: 1.8; }
+        footer a { color: #a5b4fc; }
+        footer a:hover { color: #fff; }
+
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .blog-list { padding: 2rem 1.25rem 4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">⚡ JarvisandSeckin</a>
+        <div class="nav-links">
+            <a href="/#products">Products</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="page-header">
+    <h1><span>Blog</span></h1>
+    <p>Practical guides on the products we build and the problems we solve.</p>
+</header>
+
+<main class="blog-list">
+    <a href="/blog/how-to-split-bills-fairly/" class="blog-card">
+        <div class="emoji">💰</div>
+        <h2>How to Split Bills Fairly — The Complete Guide (2026)</h2>
+        <p>Learn how to split bills fairly every time. Compare equal vs itemized splits, handle tips, and simplify group expenses with the right approach.</p>
+        <span class="read-more">Read Article →</span>
+    </a>
+
+    <a href="/blog/glp1-medication-tracker-guide/" class="blog-card">
+        <div class="emoji">💊</div>
+        <h2>GLP-1 Medication Tracker: Why You Need One on Ozempic or Wegovy</h2>
+        <p>A GLP-1 tracker helps you log doses, side effects, and weight on Ozempic or Wegovy. Learn what to track and why it matters.</p>
+        <span class="read-more">Read Article →</span>
+    </a>
+
+    <a href="/blog/failed-payments-saas-revenue/" class="blog-card">
+        <div class="emoji">🔄</div>
+        <h2>Failed Payments Are Killing Your SaaS Revenue — Here's How to Fix It</h2>
+        <p>Failed payments silently drain SaaS MRR. Learn why cards fail, smart retry strategies, and how dunning recovery can save your revenue.</p>
+        <span class="read-more">Read Article →</span>
+    </a>
+</main>
+
+<footer>
+    <div class="footer-brand">⚡ JarvisandSeckin Inc.</div>
+    <p>© 2026 JarvisandSeckin Inc. | Istanbul, Turkey</p>
+    <p>Contact: <a href="mailto:seckincaglinai@gmail.com">seckincaglinai@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
